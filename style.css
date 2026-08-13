@@ -96,6 +96,13 @@ main {
   color: var(--text-muted);
 }
 
+.rozpis-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
 .rozpis-thumb-btn {
   display: block;
   width: 100%;
@@ -106,7 +113,6 @@ main {
   background: #eef1f5;
   cursor: pointer;
   position: relative;
-  margin-bottom: 14px;
 }
 
 .rozpis-thumb-btn img {
