@@ -279,7 +279,6 @@ main {
   width: 100%;
   height: auto;
   display: block;
-  touch-action: pinch-zoom;
 }
 
 .lightbox-close {
