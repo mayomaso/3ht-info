@@ -164,18 +164,64 @@ main {
   opacity: 0.85;
 }
 
-.bazar-embed {
-  margin-top: 14px;
+.bazar-list {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 14px;
+}
+
+.bazar-loading,
+.bazar-empty {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  grid-column: 1 / -1;
+}
+
+.bazar-card {
+  background: var(--card-bg);
   border: 1px solid var(--border);
   border-radius: 10px;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
-.bazar-embed iframe {
+.bazar-photo {
   width: 100%;
-  height: 520px;
-  border: 0;
+  height: 160px;
+  object-fit: cover;
   display: block;
+  background: var(--bg);
+}
+
+.bazar-card-body {
+  padding: 10px 12px 14px;
+}
+
+.bazar-card-body h3 {
+  margin: 0 0 4px;
+  font-size: 1rem;
+  color: var(--blue-dark);
+}
+
+.bazar-price {
+  font-weight: 600;
+  color: var(--red);
+  margin: 0 0 6px;
+}
+
+.bazar-desc {
+  font-size: 0.9rem;
+  color: var(--text);
+  margin: 0 0 6px;
+  white-space: pre-wrap;
+}
+
+.bazar-contact {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin: 0;
 }
 
 .info-section {
